@@ -1,0 +1,50 @@
+ <!--Create a website with a form on it to take the user's full name and address as if they were ordering a product from you. After they submit the form you should show them a receipt. Thank them for purchasing whatever it is you are selling, and be sure to use their full name. Then reprint their address as a confirmation of shipping details.-->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta type="description" content="Bla bla forms practice">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Forms Practice - Order and Receipt</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Order form practice</h3>
+      <p>Order here</p>
+      <div id="blanks">
+        <form>
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input id="firstName" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input id="lastName" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="address1">Street Address</label>
+            <input id="address1" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="address2">City, State, zip</label>
+            <input id="address2" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn">Submit order</button>
+        </form>
+      </div>
+      <div id="story" style="display:none;">
+        <h1>Receipt:</h1>
+        <p>Thank you for ordering day-old cupcakes.
+        <p>First Name: <span class="firstName"></span></p>
+        <p>Last Name: <span class="lastName"></span></p>
+        <p>Address 1: <span class="address1"></span></p>
+        <p>Address 2: <span class="address2"></span></p>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
